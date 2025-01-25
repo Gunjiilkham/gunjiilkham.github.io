@@ -10,131 +10,50 @@
             margin: 0;
             font-family: 'Fira Code', monospace;
             background-color: #0d0d0d;
-            color: #ffffff;
+            color: #00ff99;
+            padding: 20px;
             line-height: 1.6;
         }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
+        .terminal {
             background-color: #181818;
-            border-bottom: 2px solid #00ff99;
-        }
-        header h1 {
-            font-size: 1.8em;
-            color: #00ff99;
-        }
-        nav a {
-            color: #00ff99;
-            text-decoration: none;
-            margin-left: 20px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 20px 40px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: #00ff99;
-            border-bottom: 2px solid #00ff99;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-        .content-box {
-            background-color: #1a1a1a;
-            padding: 20px;
             border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 10px rgba(0, 255, 153, 0.1);
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 4px 10px rgba(0, 255, 153, 0.2);
         }
-        .content-box:hover {
-            box-shadow: 0 4px 20px rgba(0, 255, 153, 0.2);
+        .line {
+            margin: 10px 0;
         }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #181818;
-            border-top: 2px solid #00ff99;
-            color: #999;
+        .line span {
+            color: #00cc80;
         }
         a {
             color: #00ff99;
+            text-decoration: none;
         }
         a:hover {
-            color: #00cc80;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Gunjiilkham Altanzaya</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <div class="terminal">
+        <div class="line"><span>gunjzaya@website:~$</span> whoami</div>
+        <div class="line">Gunjiilkham Altanzaya</div>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="content-box">
-                <p>I'm a computer science student with a passion for building scalable web applications and integrating AI into practical use cases. I enjoy creating solutions that combine technical precision with creative design.</p>
-            </div>
-        </section>
+        <div class="line"><span>gunjzaya@website:~$</span> echo $CODE</div>
+        <div class="line"><a href="https://github.com/Gunjiilkham" target="_blank">https://github.com/Gunjiilkham</a></div>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="content-box">
-                <h3>Software Engineer Intern - Antispace</h3>
-                <p><strong>May 2024 - Aug 2024</strong></p>
-                <ul>
-                    <li>Reduced QA-reported bugs by 30% through optimized debugging workflows.</li>
-                    <li>Implemented automated systems, decreasing processing time by 40%.</li>
-                </ul>
-            </div>
-            <div class="content-box">
-                <h3>Software Engineer Intern - GhostAI</h3>
-                <p><strong>Nov 2023 - Feb 2024</strong></p>
-                <ul>
-                    <li>Enhanced platform performance, reducing load times by 25%.</li>
-                    <li>Developed modular components for improved scalability.</li>
-                </ul>
-            </div>
-        </section>
+        <div class="line"><span>gunjzaya@website:~$</span> echo $PROJECTS</div>
+        <div class="line">- <a href="#">CoFound</a>: Internship matching platform with ML recommendations</div>
+        <div class="line">- <a href="#">AI-based Study Helper</a>: Personalized study schedules with AI</div>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="content-box">
-                <h3>CoFound</h3>
-                <p>Platform matching students with internships using a machine learning recommendation engine.</p>
-                <p><strong>Technologies:</strong> Next.js, Node.js, Scikit-learn</p>
-            </div>
-            <div class="content-box">
-                <h3>AI-based Study Helper</h3>
-                <p>AI-powered study helper generating personalized schedules and explanations.</p>
-                <p><strong>Technologies:</strong> Flask, FastAPI, PostgreSQL</p>
-            </div>
-        </section>
+        <div class="line"><span>gunjzaya@website:~$</span> echo $SOCIAL</div>
+        <div class="line">- <a href="https://www.linkedin.com/in/gunjiilkham-altanzaya/" target="_blank">LinkedIn</a></div>
+        <div class="line">- <a href="mailto:gunjiilkham@gmail.com">Email: gunjiilkham@gmail.com</a></div>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="content-box">
-                <p>Email: <a href="mailto:gunjiilkham@gmail.com">gunjiilkham@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/gunjiilkham-altanzaya/" target="_blank">linkedin.com/in/gunjiilkham-altanzaya</a></p>
-                <p>GitHub: <a href="https://github.com/Gunjiilkham" target="_blank">github.com/Gunjiilkham</a></p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Gunjiilkham Altanzaya. All rights reserved.</p>
-    </footer>
+        <div class="line"><span>gunjzaya@website:~$</span> █</div>
+    </div>
 </body>
 </html>
