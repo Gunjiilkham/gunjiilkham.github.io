@@ -6,91 +6,54 @@
     <title>Gunjiilkham Altanzaya Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         body {
+            margin: 0;
             font-family: 'Fira Code', monospace;
             background-color: #0d0d0d;
             color: #00ff99;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
+            padding: 20px;
+            line-height: 1.6;
         }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #00cc80;
-        }
-        .command {
-            display: inline-block;
+        .terminal {
             background-color: #181818;
-            padding: 10px 20px;
-            margin: 10px 0;
             border-radius: 8px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
             box-shadow: 0 4px 10px rgba(0, 255, 153, 0.2);
         }
-        .command span {
+        .line {
+            margin: 10px 0;
+        }
+        .line span {
             color: #00cc80;
         }
-        .links a {
+        a {
             color: #00ff99;
             text-decoration: none;
-            display: block;
-            margin: 10px 0;
-            font-size: 1.2rem;
         }
-        .links a:hover {
-            color: #00cc80;
+        a:hover {
             text-decoration: underline;
-        }
-        .blinking-cursor {
-            font-weight: bold;
-            font-size: 1.2rem;
-            color: #00ff99;
-            animation: blink 1s step-end infinite;
-        }
-        @keyframes blink {
-            from, to {
-                color: transparent;
-            }
-            50% {
-                color: #00ff99;
-            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Gunjiilkham Altanzaya</h1>
-        <div class="command"><span>gunjzaya@website:~$</span> whoami</div>
-        <p>Gunjiilkham Altanzaya</p>
+    <div class="terminal">
+        <div class="line"><span>gunjzaya@website:~$</span> whoami</div>
+        <div class="line">Gunjiilkham Altanzaya</div>
 
-        <div class="command"><span>gunjzaya@website:~$</span> echo $CODE</div>
-        <div class="links">
-            <a href="https://github.com/Gunjiilkham" target="_blank">GitHub</a>
-        </div>
+        <div class="line"><span>gunjzaya@website:~$</span> echo $CODE</div>
+        <div class="line"><a href="https://github.com/Gunjiilkham" target="_blank">https://github.com/Gunjiilkham</a></div>
 
-        <div class="command"><span>gunjzaya@website:~$</span> echo $PROJECTS</div>
-        <div class="links">
-            <a href="#">CoFound</a>: Internship matching platform with ML recommendations<br>
-            <a href="#">AI-based Study Helper</a>: Personalized study schedules with AI
-        </div>
+        <div class="line"><span>gunjzaya@website:~$</span> echo $PROJECTS</div>
+        <div class="line">- <a href="#">CoFound</a>: Internship matching platform with ML recommendations</div>
+        <div class="line">- <a href="#">AI-based Study Helper</a>: Personalized study schedules with AI</div>
 
-        <div class="command"><span>gunjzaya@website:~$</span> echo $SOCIAL</div>
-        <div class="links">
-            <a href="https://www.linkedin.com/in/gunjiilkham-altanzaya/" target="_blank">LinkedIn</a>
-            <a href="mailto:gunjiilkham@gmail.com">Email: gunjiilkham@gmail.com</a>
-        </div>
+        <div class="line"><span>gunjzaya@website:~$</span> echo $SOCIAL</div>
+        <div class="line">- <a href="https://www.linkedin.com/in/gunjiilkham-altanzaya/" target="_blank">LinkedIn</a></div>
+        <div class="line">- <a href="mailto:gunjiilkham@gmail.com">Email: gunjiilkham@gmail.com</a></div>
 
-        <div class="blinking-cursor">█</div>
+        <div class="line"><span>gunjzaya@website:~$</span> █</div>
     </div>
 </body>
 </html>
