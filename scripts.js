@@ -1,42 +1,36 @@
 const pages = {
+    main: `
+        <span>Welcome to the portfolio of Gunjiilkham Altanzaya!</span><br>
+        <span>Type 'about', 'projects', or 'cv' in the terminal to navigate.</span>
+    `,
     about: `
-        <section id="about">
-            <h1>About Me</h1>
-            <p>
-                Hey, I'm Gunjiilkham Altanzaya, a Software Engineer passionate about building scalable solutions.
-                I love solving problems and exploring creative ways to bring tech into everyday life.
-            </p>
-        </section>
+        <span>(gunjiilkham-altanzaya)@Portfolio:~$</span> whoami<br/>
+        I'm Gunjiilkham Altanzaya, a Software Engineer passionate about scalable solutions.<br/>
     `,
     projects: `
-        <section id="projects">
-            <h1>Projects</h1>
-            <ul>
-                <li><a href="#">CoFound</a>: Internship matching platform with ML recommendations</li>
-                <li><a href="#">AI-based Study Helper</a>: Personalized schedules using AI</li>
-            </ul>
-            <h2>Skills</h2>
-            <ul>
-                <li>Python, JavaScript, C++, SQL</li>
-                <li>Frameworks: Flask, Next.js, Tailwind CSS</li>
-                <li>Tools: Git, Docker, PostgreSQL</li>
-            </ul>
-        </section>
+        <span>(gunjiilkham-altanzaya)@Portfolio:~$</span> echo $PROJECTS<br/>
+        <ul>
+            <li><a href="#">CoFound</a>: Internship matching platform with ML recommendations</li>
+            <li><a href="#">AI-based Study Helper</a>: Personalized schedules using AI</li>
+        </ul><br/>
+        <span>(gunjiilkham-altanzaya)@Portfolio:~$</span> echo $SKILLS<br/>
+        <ul>
+            <li>Languages: Python, JavaScript, C++, SQL</li>
+            <li>Frameworks: Flask, Next.js</li>
+            <li>Tools: Git, Docker, PostgreSQL</li>
+        </ul>
     `,
     cv: `
-        <section id="cv">
-            <h1>CV</h1>
-            <p>
-                You can view my CV here:
-                <a href="https://gunjiilkham-altanzaya-resume.tiiny.site" target="_blank">Download CV</a>
-            </p>
-        </section>
-    `,
+        <span>(gunjiilkham-altanzaya)@Portfolio:~$</span> echo $CV<br/>
+        <a href="https://gunjiilkham-altanzaya-resume.tiiny.site" target="_blank">View CV</a>
+    `
 };
 
 function navigateTo(page) {
-    document.getElementById('content').innerHTML = pages[page];
+    const consoleDiv = document.getElementById('console');
+    consoleDiv.innerHTML = pages[page];
+    consoleDiv.innerHTML += '<span class="blinking-cursor">█</span>';
 }
 
-// Load the default page
-navigateTo('about');
+// Default page load
+navigateTo('main');
