@@ -1,21 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gunjiilkham Altanzaya Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arty - CS Student Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div id="name">gunjiilkham</div>
-        <nav>
-            <a href="#research" onclick="navigateTo('research')">Research</a>
-            <a href="#projects" onclick="navigateTo('projects')">Projects</a>
-            <a href="#notes" onclick="navigateTo('notes')">Notes</a>
-        </nav>
+<body class="bg-gray-900 text-gray-200 font-mono">
+  <div class="container mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold">arty</h1>
+      <p class="text-gray-400">CS Student | Drexel University</p>
     </header>
-    <main id="content"></main>
-    <script src="scripts.js"></script>
+    
+    <main>
+      <section class="mb-8">
+        <h2 class="text-xl font-bold mb-4">About</h2>
+        <p>Junior CS student with a passion for deep learning, multimodal AI, and building practical web applications.</p>
+      </section>
+      
+      <section class="mb-8">
+        <h2 class="text-xl font-bold mb-4">Experience</h2>
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-bold">CI Teaching Assistant</h3>
+            <p class="text-gray-400">Drexel University College of Computing & Informatics</p>
+            <p class="text-gray-400">Jan 2025 - Present</p>
+            <p>Provided tutoring for CS, DSA, Physics II, and Discrete Math.</p>
+          </div>
+          <div>
+            <h3 class="font-bold">Software Engineer Intern</h3>
+            <p class="text-gray-400">Antispace</p>
+            <p class="text-gray-400">May 2024 - Aug 2024</p>
+            <p>Led debugging initiatives and automated workflows, improving platform stability and performance.</p>
+          </div>
+          <div>
+            <h3 class="font-bold">Software Engineer Intern</h3>
+            <p class="text-gray-400">GHOSTAI</p>
+            <p class="text-gray-400">Nov 2023 - Feb 2024</p>
+            <p>Collaborated on core feature enhancements and performance optimizations using Next.js and JavaScript.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="mb-8">
+        <h2 class="text-xl font-bold mb-4">Projects</h2>
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-bold">AI-based Study Helper</h3>
+            <p>Built an AI-powered study assistant that generates personalized schedules and provides explanations.</p>
+          </div>
+          <div>
+            <h3 class="font-bold">CoFound</h3>
+            <p>Developed a platform to match students with startup internships using ML recommendations.</p>
+          </div>
+          <div>
+            <h3 class="font-bold">Tableau Data Visualization</h3>
+            <p>Created a data visualization analyzing temperature, latitude, and country distributions.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="text-center text-gray-400">
+      &copy; 2023 arty
+    </footer>
+  </div>
 </body>
 </html>
