@@ -96,7 +96,7 @@ var Typer = {
   }
   
   Typer.speed = 3;
-  Typer.file = "type.html";
+  Typer.file = "./type.html";
   Typer.init();
   
   var timer = setInterval("t();", 30);
