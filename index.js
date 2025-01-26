@@ -2,7 +2,7 @@ var Typer = {
     text: "",
     index: 0,
     speed: 3,
-    file: "type.html",
+    file: "./type.html",
     init: function () {
       $.get(Typer.file, function (data) {
         Typer.text = data;
