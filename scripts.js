@@ -1,33 +1,42 @@
-const content = document.getElementById("content");
-
-const sections = {
+const pages = {
     about: `
-        <p>Hi, I'm Gunjiilkham Altanzaya, a Software Engineer passionate about creating scalable and creative solutions. 
-        I specialize in Python, JavaScript, and building full-stack applications.</p>
-        <p>Welcome to my portfolio, where you can explore my projects and skills.</p>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>
+                Hey, I'm Gunjiilkham Altanzaya, a Software Engineer passionate about building scalable solutions.
+                I love solving problems and exploring creative ways to bring tech into everyday life.
+            </p>
+        </section>
     `,
     projects: `
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>CoFound:</strong> Internship matching platform with ML recommendations</li>
-            <li><strong>AI-based Study Helper:</strong> Personalized schedules using AI</li>
-        </ul>
-        <h2>Skills</h2>
-        <ul>
-            <li>Languages: Python, JavaScript, C++, SQL</li>
-            <li>Frameworks: Flask, Next.js, Tailwind CSS</li>
-            <li>Tools: Git, Docker, PostgreSQL</li>
-        </ul>
+        <section id="projects">
+            <h1>Projects</h1>
+            <ul>
+                <li><a href="#">CoFound</a>: Internship matching platform with ML recommendations</li>
+                <li><a href="#">AI-based Study Helper</a>: Personalized schedules using AI</li>
+            </ul>
+            <h2>Skills</h2>
+            <ul>
+                <li>Python, JavaScript, C++, SQL</li>
+                <li>Frameworks: Flask, Next.js, Tailwind CSS</li>
+                <li>Tools: Git, Docker, PostgreSQL</li>
+            </ul>
+        </section>
+    `,
+    cv: `
+        <section id="cv">
+            <h1>CV</h1>
+            <p>
+                You can view my CV here:
+                <a href="https://gunjiilkham-altanzaya-resume.tiiny.site" target="_blank">Download CV</a>
+            </p>
+        </section>
     `,
 };
 
-document.querySelectorAll("nav a").forEach(link => {
-    link.addEventListener("click", event => {
-        event.preventDefault();
-        const section = event.target.dataset.section;
-        content.innerHTML = sections[section] || "<p>Content not found.</p>";
-    });
-});
+function navigateTo(page) {
+    document.getElementById('content').innerHTML = pages[page];
+}
 
-// Load About section by default
-content.innerHTML = sections.about;
+// Load the default page
+navigateTo('about');
